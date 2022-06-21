@@ -151,10 +151,15 @@ Si no se encuentra, se devuelve null.
 Veamos unos ejemplos:
 
 sumPairs([3, 5, 7, 2], 10) // [3, 7]
+
 sumPairs([-3, -2, 7, -5], 10) // null
+
 sumPairs([2, 2, 3, 1], 4) // [2, 2]
+
 sumPairs([6, 7, 1, 2], 8) // [6, 2]
+
 sumPairs([0, 2, 2, 3, -1, 1, 5], 6) // [1, 5]
+
 El resultado tiene que ser un array con dos números.
 
 Una vez que tengas el resultado... ¿cómo podrías hacer que fuese lo más óptimo posible para no tener que recorrer las mismas situaciones dos veces 🤔?
@@ -212,17 +217,21 @@ La lista de precios es un array de números y representa el tiempo de izquierda 
 Por ejemplo:
 
 const pricesBtc = [39, 18, 29, 25, 34, 32, 5]
+
 maxProfit(pricesBtc) // -> 16 (compra a 18, vende a 34)
 
 const pricesEth = [10, 20, 30, 40, 50, 60, 70]  
+
 maxProfit(pricesEth) // -> 60 (compra a 10, vende a 70)
     
 Si ese día no se puede sacar ningún beneficio, tenemos que devolver -1 para evitar que hagamos una locura:
 
 const pricesDoge = [18, 15, 12, 11, 9, 7]
+
 maxProfit(pricesDoge) = // -> -1 (no hay ganancia posible)
 
 const pricesAda = [3, 3, 3, 3, 3]
+
 maxProfit(pricesAda) = // -> -1 
 
 
