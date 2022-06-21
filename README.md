@@ -1,6 +1,6 @@
 # RetosMidudev
 
-#Reto 1:
+# Reto 1:
 
 Considera una lista/array de ovejas. Cada oveja tiene un nombre y un color. Haz una función que devuelva una lista con todas las ovejas que sean de color rojo y que además su nombre contenga tanto las letras n Y a, sin importar el orden, las mayúsculas o espacios.
 
@@ -25,7 +25,7 @@ console.log(ovejasFiltradas)
 Recuerda. Debe contener las dos letras 'a' y 'n' en el nombre. No cuentes ovejas que sólo tenga una de las letras, debe tener ambas.
 
 
-#Reto 2:
+# Reto 2:
 
 Te ha llegado una carta ✉️ con todos los regalos que debes preparar. El tema es que es una cadena de texto y es muy difícil de leer 😱. ¡Menos mal que han puesto cada regalo separado por espacio! (aunque ten cuidado, porque al ser niños, igual han colado más espacios de la cuenta)
 
@@ -50,7 +50,7 @@ console.log(regalos)
 Ten en cuenta que los tests pueden ser más exhaustivos... 😝 ¡Cuidado con contar espacios vacíos!
 
 
-#Reto 3:
+# Reto 3:
 
 El Grinch está abriendo las cartas que iban a Santa Claus y las está dejando hechas un lío. 😱
 
@@ -73,38 +73,29 @@ Ejemplos:
 Crea una función que pasándole el texto de la carta, devuelva true si es válida y false si no lo es. ¡Y acaba con la travesura del Grinch!
 
 
-#Reto 4:
+# Reto 4:
 
 ¡Es hora de poner el árbol de navidad en casa! 🎄
 
 Para ello vamos a crear una función que recibe la altura del árbol, que será un entero positivo del 1 a, como máximo, 100.
 
-Si le pasamos el argumento 5, se pintaría esto:
-
-____*____
-___***___
-__*****__
-_*******_
-*********
-____#____
-____#____
 
 Creamos un triángulo de asteriscos * con la altura proporcionada y, a los lados, usamos el guión bajo _ para los espacios. Es muy importante que nuestro árbol siempre tenga la misma longitud por cada lado.
 Todos los árboles, por pequeños o grandes que sean, tienen un tronco de dos líneas de #.
 
 Otro ejemplo con un árbol de altura 3:
 
-__*__
-_***_
+.,*,.
+.***.
 *****
-__#__
-__#__
+.,#,.
+.,#,.
 
 
 Ten en cuenta que el árbol es un string y necesitas los saltos de línea \n para cada línea para que se forme bien el árbol.
 
 
-#Reto 5:
+# Reto 5:
 
 Con la emoción, ya estamos empezando a contar los días del calendario hasta el 25 de diciembre 📆.
 
@@ -137,7 +128,7 @@ daysToXmas(date4) // -7
 Por cierto, la fecha de referencia para saber si es 25 de diciembre es Dec 25, 2021.
 
 
-#Reto 6:
+# Reto 6:
 
 Antes de poder disfrutar de la navidad... nos toca terminar de rematar los exámenes finales. ¡Y toca un poco de matemáticas! 😱
 
@@ -159,7 +150,7 @@ El resultado tiene que ser un array con dos números.
 Una vez que tengas el resultado... ¿cómo podrías hacer que fuese lo más óptimo posible para no tener que recorrer las mismas situaciones dos veces 🤔?
 
 
-#Reto 7:
+# Reto 7:
 
 Mi amigo Dani está trabajando en una tienda y con la llegada de las navidades tiene el almacén hecho un desastre y no encuentra nada.
 
@@ -200,7 +191,7 @@ contains(otroAlmacen, 'gameboy') // false
 Ten en cuenta que la tienda es enorme. Tiene diferentes almacenes y, como has visto en los ejemplos, cada uno puede tener diferentes organizaciones.Lo importante es buscar que el producto está en los almacenes.
 
 
-#Reto 8:
+# Reto 8:
 
 Invertir en criptomonedas es casi un deporte de riesgo. El otro día hackearon Bitmart y ha hecho que el valor de Bitcoin, y otras monedas, bajase un 25%.
 
@@ -223,7 +214,9 @@ maxProfit(pricesDoge) = // -> -1 (no hay ganancia posible)
 
 const pricesAda = [3, 3, 3, 3, 3]
 maxProfit(pricesAda) = // -> -1 
-#Reto 9:
+
+
+# Reto 9:
 
 En la fábrica de Papa Noél 🎅 se acerca el día especial... y todavía tenemos un montón de cosas por contar. 😅
 
@@ -254,7 +247,7 @@ Como ves, la función groupBy recibe una colección (array) y una función o una
 La dificultad del reto está más en comprender la función que en la implementación. ¡Suerte!.
 
 
-#Reto 10:
+# Reto 10:
 
 Para mejorar la productividad de la tienda en la que trabajamos, vamos a crear una pequeña máquina que calcula el mínimo número de monedas que debemos usar para dar el cambio de una compra en metálico.
 
@@ -276,7 +269,7 @@ getCoins(100) // [0, 0, 0, 0, 0, 2] -> dos monedas de 50 céntimos
 La dificultad del reto está en saber utilizar correctamente una estructura que te permita conocer las monedas que tienes disponible para crear el array con la devolución, ya que debes usar siempre el menor número de monedas posible. ¡Suerte 👩‍💻👨‍💻!.
 
 
-#Reto 11:
+# Reto 11:
 
 Este mes de diciembre hay películas super interesantes en el cine... y tengo que optimizar cómo gasto el dinero.
 
@@ -297,7 +290,7 @@ La dificultad del reto está en encontrar una fórmula sencilla que nos diga el 
 
 
 
-#Reto 12:
+# Reto 12:
 
 En el taller de Santa 🎅 se están preparando los trineos de motor eléctrico para poder hacer la ruta perfecta para dejar los regalos.
 
@@ -342,7 +335,7 @@ getMinJump([9, 5, 1]) // -> 2
 */
 La dificultad del reto está en pensar que sólo podemos configurar el salto del trineo una vez y que buscamos el salto mínimo que nos serviría para sortear todos los obstaculos.
 
-#Reto 13:
+# Reto 13:
 
 ¡Hay demasiados regalos 🎁! Y envolverlos es una locura...
 
@@ -380,7 +373,7 @@ wrapGifts(["📷"])
 */
 
 
-#Reto 14:
+# Reto 14:
 
 
 ¡Hemos perdido a un reno y falta poco más de una semana para Navidad! 😱
@@ -403,7 +396,7 @@ Parece fácil con una complejidad de O(n)... ¿crees que podrías hacerlo mejor?
 
 
 
-#Reto 15:
+# Reto 15:
 
 ¡Estamos haciendo los últimos ajustes para el trineo de Santa Claus!
 
@@ -424,7 +417,7 @@ checkSledJump([1, 2, 3, 2, 1, 2, 3]) // false: sube y baja y sube... ¡no vale!
 Lo importante: recorrer el array de izquierda a derecha para ver que la subida es siempre estricta, detectar el punto más alto y entonces ver que la bajada es estricta hacia abajo...
 
 
-#Reto 16:
+# Reto 16:
 
 Lara Eloft ha encontrado unos restos élficos en una cueva, cerca del Círculo Polar Ártico, a 8 km al norte de Rovaniemi.
 
@@ -458,7 +451,7 @@ decodeNumbers(';.W') // NaN
 
 
 
-#Reto 17:
+# Reto 17:
 
 Las empresas de paquetería 📦 se preparan para la época de fiestas y la locura de envíos que les espera.
 
@@ -497,7 +490,7 @@ countPackages(carriers2, 'camila') // 15
 ¡Ten cuidado! Como has visto en el segundo ejemplo, el organigrama puede tener diferentes niveles y además nos viene información que puede ser que no necesitemos. Debemos tener en cuenta el parámetro de carrierID para calcular bien el número y contar todo su equipo.
 
 
-#Reto 18:
+# Reto 18:
 
 Evelyn Belefzin 👩‍💻 está trabajando en un sistema operativo para ser usado en el taller de Santa Claus 🎅.
 
@@ -519,7 +512,7 @@ fixFiles(files3) // ['file', 'file(1)', 'icon', 'icon(1)', 'icon(1)(1)']
 Por cierto, nos han dicho que son Agile y usan Scrum. Por eso quieren saber cuánto tiempo vas a tardar para saber cuándo van a poder usarlo. Que hay prisa. 😝 Así que entra a Discord y cuéntanos.
 
 
-#Reto 19:
+# Reto 19:
 
 Con motivo de las fechas más bonitas del año, en Platzi han lanzado una promoción muy especial porque la educación es un regalo 🎁 para siempre.
 
@@ -547,7 +540,7 @@ learn(5, [5, 5, 5]) // null -> no nos da tiempo a hacer dos cursos
 Mirando todo el tema de Platzi, además nos hemos dado cuenta que tienen un descuento especial para Navidad. ¿No sabes qué regalar? Regala conocimiento 🎓.
 
 
-#Reto 20:
+# Reto 20:
 
 En la clase de español del pueblo de Laponia han creado un reto a la hora de escribir la carta a Papa Noél 🎅: la carta ✉️ tiene que contener todas las letras del alfabeto.
 
@@ -565,7 +558,7 @@ pangram('De la a a la z, nos faltan letras') // false
 Y ya que estás... ¿Cuál es tu pangrama favorito? ¡Compártelo en nuestra comunidad de Discord!
 
 
-#Reto 21:
+# Reto 21:
 
 Se están preparando las rutas para el trineo de Santa 🎅. Tenemos almacenes por todo el mundo para que Santa pueda recoger los regalos y entregarlos en el destino final. 🎁
 
@@ -604,7 +597,7 @@ Lo difícil, e importante, es que entiendas que Santa Claus va entregando y reco
 
 
 
-#Reto 22:
+# Reto 22:
 
 ¡Ay! Que llega la Navidad y no hemos decorado todavía el árbol. 🎄😱
 
@@ -681,7 +674,7 @@ countDecorations(bigTree) // 28
 Por cierto, Bellf Gates me ha contado que este tipo de ejercicio es muy típico en las entrevistas de trabajo para programadores. ¿Lo sabías?
 
 
-#Reto 23:
+# Reto 23:
 
 Estamos en la fábrica de Santa Claus 🎅 creando regalos como si no hubiera un mañana.
 
@@ -738,7 +731,7 @@ const from = 'AA'
 const to   = 'MID'
 cons canReconfigure(from, to)
 
-#Reto 24:
+# Reto 24:
 
 El abuelo 👴 dice que ve todos los árboles de navidad iguales... La abuela 👵, en cambio, piensa que no. Que todos los árboles de navidad son distintos...
 
@@ -765,7 +758,7 @@ checkIsSameTree(tree2, tree2) // true
 El cuñado 🦹‍♂️, que se las sabe todas, me ha dicho que tenga cuidado porque el truco del JSON.stringify puede no funcionar... ya que los árboles pueden ser el mismo pero el orden de representación de las ramas izquierda y derecha puede ser inversa...
 
 
-#Reto 25:
+# Reto 25:
 
 
 Ayer, en noche buena, una família cenó por todo lo alto... Con tanta copa 🍾 encima todavía no han retirado los platos y la comida de ayer...
