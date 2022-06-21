@@ -192,7 +192,7 @@ const almacen = {
     'cajon2': {
     
       'producto1': 'pantalones',
-      'producto2': 'camiseta' // <- ¡Está aquí!
+      'producto2': 'camiseta' <- ¡Está aquí!
       
     
     }
@@ -246,7 +246,7 @@ Si ese día no se puede sacar ningún beneficio, tenemos que devolver -1 para ev
 
 const pricesDoge = [18, 15, 12, 11, 9, 7]
 
-maxProfit(pricesDoge) = // -> -1 (no hay ganancia posible)
+maxProfit(pricesDoge) =  -> -1 (no hay ganancia posible)
 
 const pricesAda = [3, 3, 3, 3, 3]
 
@@ -273,7 +273,7 @@ groupBy(
   timestamp => new Date(timestamp).getFullYear()
 )
 
-// { 2013: [1363223700000], 2014: [1397639141184] }
+ { 2013: [1363223700000], 2014: [1397639141184] }
 
 
 groupBy([
@@ -596,11 +596,11 @@ Hay que tener en cuenta las letras en mayúscula y que las letras con acento y d
 
 Vamos a ver unos ejemplos de frases:
 
-pangram('Extraño pan de col y kiwi se quemó bajo fugaz vaho') // true
-pangram('Jovencillo emponzoñado y con walkman: ¡qué figurota exhibes!') // true
+pangram('Extraño pan de col y kiwi se quemó bajo fugaz vaho')  true
+pangram('Jovencillo emponzoñado y con walkman: ¡qué figurota exhibes!')  true
 
-pangram('Esto es una frase larga pero no tiene todas las letras del abecedario') // false
-pangram('De la a a la z, nos faltan letras') // false
+pangram('Esto es una frase larga pero no tiene todas las letras del abecedario')  false
+pangram('De la a a la z, nos faltan letras')  false
 Y ya que estás... ¿Cuál es tu pangrama favorito? ¡Compártelo en nuestra comunidad de Discord!
 
 
@@ -637,7 +637,7 @@ En el punto 10 entrega 2 regalos...
 canCarry(3, [[2, 1, 5],[3, 5, 7]])  true -> nunca supera el máximo de capacidad
 canCarry(4, [[2, 3, 8],[2, 5, 7]])  true -> del punto 5 al 7 lleva 4 regalos y no supera el máximo
 
-canCarry(1, [[2, 3, 8]]) // false -> no podría ni con el primer viaje
+canCarry(1, [[2, 3, 8]])  false -> no podría ni con el primer viaje
 canCarry(2, [[1, 2, 4], [2, 3, 8]])  false -> del punto 3 al 4 supera la capacidad máxima porque llevaría 3 regalos
 Lo difícil, e importante, es que entiendas que Santa Claus va entregando y recogiendo regalos y que a veces eso puede hacer que supere la carga máxima.
 
