@@ -88,6 +88,7 @@ _*******_
 *********
 ____#____
 ____#____
+
 Creamos un triángulo de asteriscos * con la altura proporcionada y, a los lados, usamos el guión bajo _ para los espacios. Es muy importante que nuestro árbol siempre tenga la misma longitud por cada lado.
 Todos los árboles, por pequeños o grandes que sean, tienen un tronco de dos líneas de #.
 
@@ -98,6 +99,8 @@ _***_
 *****
 __#__
 __#__
+
+
 Ten en cuenta que el árbol es un string y necesitas los saltos de línea \n para cada línea para que se forme bien el árbol.
 
 
