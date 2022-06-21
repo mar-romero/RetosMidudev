@@ -178,27 +178,20 @@ const almacen = {
   'estanteria1': {
   
     'cajon1': {
-    
       'producto1': 'coca-cola',
       'producto2': 'fanta',
       'producto3': 'sprite'
     }
-    
   },
   
   'estanteria2': {
   
     'cajon1': 'vacio',
     'cajon2': {
-    
       'producto1': 'pantalones',
       'producto2': 'camiseta' <- ¡Está aquí!
-      
-    
     }
-    
   }
-  
 }
             
 contains(almacen, 'camiseta') true
@@ -208,15 +201,12 @@ const otroAlmacen = {
   'baul': {
   
     'fondo': {
-    
       'objeto': 'cd-rom',
       'otro-objeto': 'disquette',
       'otra-cosa': 'mando'
-      
-    }
-    
-  }
   
+    } 
+  }
 }
   
 contains(otroAlmacen, 'gameboy')  false
@@ -300,18 +290,29 @@ Para mejorar la productividad de la tienda en la que trabajamos, vamos a crear u
 Las monedas para cambio que puedes usar son estas:
 
 coins[0] = 1 céntimo
+
 coins[1] = 2 céntimos
+
 coins[2] = 5 céntimos
+
 coins[3] = 10 céntimos
+
 coins[4] = 20 céntimos
+
 coins[5] = 50 céntimos
+
 Tenemos que crear una función que recibe el número de céntimos que hay que devolver al cliente y la función nos da un array con la combinación de monedas mínimas que debemos usar para conseguirlo.
 
 getCoins(51) [1, 0, 0, 0, 0, 1] -> una moneda de 1 céntimo y otra de 50 céntimos
+
 getCoins(3) [1, 1, 0, 0, 0, 0] -> una moneda de 1 céntimo y otra de 2
+
 getCoins(5) [0, 0, 1, 0, 0, 0] -> una moneda de 5 céntimos
+
 getCoins(16) [1, 0, 1, 1, 0, 0] -> una moneda de 1 céntimo, una de 5 y una de 10
+
 getCoins(100) [0, 0, 0, 0, 0, 2] -> dos monedas de 50 céntimos
+
 La dificultad del reto está en saber utilizar correctamente una estructura que te permita conocer las monedas que tienes disponible para crear el array con la devolución, ya que debes usar siempre el menor número de monedas posible. ¡Suerte 👩‍💻👨‍💻!.
 
 
@@ -327,11 +328,16 @@ Mi cine favorito tiene dos posibilidades:
 Ejemplo de cada una al comprar 3 entradas y el precio que pagaría en total:
 
 Entrada normal: 12$ * 3 = 36$
+
 Tarjeta fidelidad: 250$ + (12$ * 0,75) +  (12$ * 0,75 * 0,75) + (12$ * 0,75 * 0,75 * 0,75) = 270,8125$
+
 Necesito una función que, al pasarle las veces que voy a ir al cine, me diga si vale la pena comprar la tarjeta fidelidad o no.
 
+
 shouldBuyFidelity(1)  false -> Mejor comprar tickets de un sólo uso
+
 shouldBuyFidelity(100) true -> Mejor comprar tarjeta fidelidad
+
 La dificultad del reto está en encontrar una fórmula sencilla que nos diga el precio con descuento acumulado para la tarjeta fidelidad. 😜
 
 
@@ -348,23 +354,30 @@ Encima, el trineo sólo se puede configurar para saltar un número fijo de posic
 
 Necesitamos una función que nos diga la longitud mínima del salto del trineo para ir evitando todos los obstáculos en la ruta.
 
+
 const obstacles = [5, 3, 6, 7, 9]
+
 getMinJump(obstacles)  -> 4
 
 S es salto, X es obstáculo
+
 /* Así quedaría la representación:
 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 .  .  .  X  .  X  X  X  .  X  . 
 S-----------S-----------S-------
 */
 
+
 const obstacles = [2, 4, 6, 8, 10]
+
 getMinJump(obstacles) -> 7
+
 
 /* Así quedaría la representación:
 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 .  .  X  .  X  .  X  .  X  .  X 
 S--------------------S---------
+
 
  Longitudes de salto:
  1 caería en el 2
@@ -375,9 +388,13 @@ S--------------------S---------
  6 caería en el 6
 7 es el ideal!!! ✅
 
+
 getMinJump([1, 2, 3, 5])  -> 4
+
 getMinJump([3, 7, 5])  -> 2
+
 getMinJump([9, 5, 1])  -> 2
+
 */
 La dificultad del reto está en pensar que sólo podemos configurar el salto del trineo una vez y que buscamos el salto mínimo que nos serviría para sortear todos los obstaculos.
 
@@ -392,31 +409,36 @@ Sólo tienes que tener en cuenta unas cosillas ✌️:
 Si el array está vacío, devuelve un array vacío
 Los regalos son emojis 🎁... por lo que tenlo en cuenta a la hora de contar su longitud...
 Por suerte, cada posición del array siempre tiene la misma longitud...
+
 wrapGifts(["📷", "⚽️"])
-/* Resultado:
+
+Resultado:
 [ '****',
   '*📷*',
   '*⚽️*',
   '****'
 ]
-*/
+
+
 
 wrapGifts(["🏈🎸", "🎮🧸"])
-/* Resultado:
+
+Resultado:
 [ '******',
   '*🏈🎸*',
   '*🎮🧸*',
   '******'
 ]
-*/
+
 
 wrapGifts(["📷"])
-/* Resultado:
+
+Resultado:
 [ '****',
   '*📷*',
   '****'
 ]
-*/
+
 
 
 # Reto 14:
@@ -433,11 +455,17 @@ Lo peor es que son tantos que no sabemos cuál es el que nos falta... ¡Qué lí
 Necesitamos una función que al pasarle la lista de ids de renos nos diga inmediatamente cuál es el que falta:
 
 missingReindeer([0, 2, 3])  -> 1
+
 missingReindeer([5, 6, 1, 2, 3, 7, 0])  -> 4
+
 missingReindeer([0, 1])  -> 2 (¡es el último el que falta!)
+
 missingReindeer([3, 0, 1])  -> 2
+
 missingReindeer([9, 2, 3, 5, 6, 4, 7, 0, 1]) -> 8
+
 missingReindeer([0])  -> 1 (¡es el último el que falta!)
+
 Parece fácil con una complejidad de O(n)... ¿crees que podrías hacerlo mejor?
 
 
@@ -453,13 +481,20 @@ Nuestro mecánico de confianza, Kiko Belfs, que tiene un Tesla genial, nos ha ex
 Nos ha pasado algunos ejemplos de cómo debería ser nuestra función y algunos resultados:
 
 checkSledJump([1, 2, 3, 2, 1])  true: sube y baja de forma estricta
+
 checkSledJump([0, 1, 0]) -> true: sube y baja de forma estricta
+
 checkSledJump([0, 3, 2, 1]) -> true: sube y baja de forma estricta
+
 checkSledJump([0, 1000, 1])  -> true: sube y baja de forma estricta
 
+
 checkSledJump([2, 4, 4, 6, 2])  false: no sube de forma estricta
+
 checkSledJump([1, 2, 3])  false: sólo sube
+
 checkSledJump([1, 2, 3, 2, 1, 2, 3])  false: sube y baja y sube... ¡no vale!
+
 Lo importante: recorrer el array de izquierda a derecha para ver que la subida es siempre estricta, detectar el punto más alto y entonces ver que la bajada es estricta hacia abajo...
 
 
@@ -471,27 +506,40 @@ Ahora se encuentra descifrando unas misteriosas cartas que contiene información
 
 Lara tiene un documento que contiene una serie de números que pueden ser usados para descifrarlos:
 
+
 Símbolo       Valor
   .             1
   ,             5
   :             10
   ;             50
   !             100
+  
 Lara, además, ha notado una cosa. Los símbolos se restan si están inmediatamente a la izquierda de otro mayor. 😱
 
 Tenemos que crear una función que nos pasa una cadena de texto con símbolos y tenemos que transformarlo al número correcto. ¡Ojo! Si encuentras un símbolo que no entendemos, mejor que devolvamos un NaN:
 
 decodeNumbers('...')  3
+
 decodeNumbers('.,')  4 (5 - 1)
+
 decodeNumbers(',.')  6 (5 + 1)
+
 decodeNumbers(',...')  8 (5 + 3)
+
 decodeNumbers('.........!')  107 (1 + 1 + 1 + 1 + 1 + 1 + 1 - 1 + 100)
+
 decodeNumbers('.;')  49 (50 - 1)
+
 decodeNumbers('..,')  5 (-1 + 1 + 5)
+
 decodeNumbers('..,!')  95 (1 - 1 - 5 + 100)
+
 decodeNumbers('.;!')  49 (-1 -50 + 100)
+
 decodeNumbers('!!!')  300
+
 decodeNumbers(';!')  50
+
 decodeNumbers(';.W')  NaN
 
 
@@ -506,11 +554,15 @@ La empresa funciona con flotas de furgonetas 🚛 y camiones 🚚. Las flotas ti
 Necesitamos saber el número de paquetes que una persona va a poder gestionar en un día. Para ello se cuenta el número de paquetes que puede llevar esa persona y todos los transportistas que tiene en su equipo. Lo malo es que los datos están almacenados de una forma un poco rara en un array:
 
 El array contiene otros arrays que contienen los datos de cada transportista
+
 transportista[0] -> Nombre/ID del Transportista
+
 transportista[1] -> Paquetes que gestiona en un día
+
 transportista[2] -> Array con sus subordinados
 
 Para que lo veamos en código, tanto el array, como la función de dos parámetros para conseguir el número deseado:
+
 
 const carriers = [
   ['dapelu', 5, ['midu', 'jelowing']],
@@ -518,8 +570,11 @@ const carriers = [
   ['jelowing', 2, []]
 ]
 
+
 countPackages(carriers, 'dapelu')  9
+
 5 de dapelu, 2 de midu y 2 de jelowing = 9
+
 
 const carriers2 = [
   ['lolivier', 8, ['camila', 'jesuspoleo']],
@@ -532,6 +587,7 @@ const carriers2 = [
 ]
 
 countPackages(carriers2, 'camila')  15
+
 5 de camila, 4 de sergiomartinez, 3 de conchaasensio, 2 de facundocapua y 1 de faviola = 15
 ¡Ten cuidado! Como has visto en el segundo ejemplo, el organigrama puede tener diferentes niveles y además nos viene información que puede ser que no necesitemos. Debemos tener en cuenta el parámetro de carrierID para calcular bien el número y contar todo su equipo.
 
@@ -547,14 +603,21 @@ Tenemos que crear una función que al pasarnos un array de nombres de archivo de
 Lo mejor es que veamos un ejemplo:
 
 const files = ['photo', 'postcard', 'photo', 'photo', 'video']
+
 fixFiles(files)  ['photo', 'postcard', 'photo(1)', 'photo(2)', 'video']
 
+
 const files2 = ['file', 'file', 'file', 'game', 'game']
+
 fixFiles(files2) = ['file', 'file(1)', 'file(2)', 'game', 'game(1)']
 
+
  ojo que los elfos ya tenían archivos con (1)... ¡y pueden estar repetidos!
+
 const files3 = ['file', 'file(1)', 'icon', 'icon(1)', 'icon(1)']
+
 fixFiles(files3)  ['file', 'file(1)', 'icon', 'icon(1)', 'icon(1)(1)']
+
 Por cierto, nos han dicho que son Agile y usan Scrum. Por eso quieren saber cuánto tiempo vas a tardar para saber cuándo van a poder usarlo. Que hay prisa. 😝 Así que entra a Discord y cuéntanos.
 
 
@@ -572,17 +635,24 @@ Vamos a ver unos ejemplos:
 
 learn(10, [2, 3, 8, 1, 4])  [0, 2] -> con 10 horas disponibles lo mejor es que completemos los cursos en el índice 0 y 2.
 
+
 learn(15, [2, 10, 4, 1]) [1, 2] -> Los cursos en [1, 2] son 14 horas, es la mejor opción.
+
 
 learn(25, [10, 15, 20, 5]) [0, 1] -> los cursos [0, 1] y [2, 3] completan exactamente con 25 horas pero siempre devolvemos el primero que encontremos
 
+
 learn(8, [8, 2, 1])  [1, 2] -> para hacer dos cursos, no podemos hacer el de 8 horas, así que devolvemos el de 1 y 2.
+
 
 learn(8, [8, 2, 1, 4, 3])  [3, 4] -> usamos el máximo tiempo disponible así que [3, 4] usa 7 horas y el [1, 2] sólo usaría 3 horas.
 
+
 learn(4, [10, 14, 20])  null -> no nos da tiempo a hacer dos cursos
 
+
 learn(5, [5, 5, 5])  null -> no nos da tiempo a hacer dos cursos
+
 Mirando todo el tema de Platzi, además nos hemos dado cuenta que tienen un descuento especial para Navidad. ¿No sabes qué regalar? Regala conocimiento 🎓.
 
 
@@ -597,10 +667,14 @@ Hay que tener en cuenta las letras en mayúscula y que las letras con acento y d
 Vamos a ver unos ejemplos de frases:
 
 pangram('Extraño pan de col y kiwi se quemó bajo fugaz vaho')  true
+
 pangram('Jovencillo emponzoñado y con walkman: ¡qué figurota exhibes!')  true
 
+
 pangram('Esto es una frase larga pero no tiene todas las letras del abecedario')  false
+
 pangram('De la a a la z, nos faltan letras')  false
+
 Y ya que estás... ¿Cuál es tu pangrama favorito? ¡Compártelo en nuestra comunidad de Discord!
 
 
@@ -613,21 +687,28 @@ Necesitamos saber si las rutas que estamos creando tienen sentido o si Santa va 
 Para eso vamos a crear una función que recibe dos parámetros:
 
 Un número con la capacidad máxima de regalos en el trineo.
+
 El viaje que es un array de arrays. Cada subarray contiene tres números que representan:
+
 trip[0] = número de regalos a transportar
+
 trip[1] = punto de recogida de los regalos
+
 trip[2] = punto de entrega de los regalos
+
 La ruta siempre va de izquierda a derecha (nunca volverá Santa hacia atrás) pero... ¡ten en cuenta que en mitad de la ruta puede tener que recoger regalos cuando ya tiene alguno encima!
 
 Lo mejor es que veamos un ejemplo:
 
 canCarry(4, [[2, 5, 8], [3, 6, 10]])  false
+
  En el punto 5 recoge 2 regalos...
  En el punto 6 recoge 3 regalos...
  Del punto 6 al 8 tendría 5 regalos en total
 Y su capacidad es 4... así que ¡no podría!
 
 canCarry(3, [[1, 1, 5], [2, 2, 10]])  true
+
 En el punto 1 recoge 1 regalo...
 En el punto 2 recoge 2 regalos...
 En el punto 5 entrega 1 regalo...
@@ -635,10 +716,15 @@ En el punto 10 entrega 2 regalos...
 ¡Sí puede! Nunca superó la carga máxima de 3 regalos
 
 canCarry(3, [[2, 1, 5],[3, 5, 7]])  true -> nunca supera el máximo de capacidad
+
 canCarry(4, [[2, 3, 8],[2, 5, 7]])  true -> del punto 5 al 7 lleva 4 regalos y no supera el máximo
 
+
 canCarry(1, [[2, 3, 8]])  false -> no podría ni con el primer viaje
+
 canCarry(2, [[1, 2, 4], [2, 3, 8]])  false -> del punto 3 al 4 supera la capacidad máxima porque llevaría 3 regalos
+
+
 Lo difícil, e importante, es que entiendas que Santa Claus va entregando y recogiendo regalos y que a veces eso puede hacer que supere la carga máxima.
 
 
@@ -652,6 +738,7 @@ Necesitamos una función que pasándole un árbol binario nos diga el número de
 Lo mejor es que veamos un ejemplo:
 
  tenemos el árbol en forma de objeto
+ 
 const tree = {
   value: 1,  el nodo raíz siempre es uno, porque es la estrella ⭐
   left: {
@@ -733,8 +820,11 @@ Pero tiene limitaciones 🥲: al reemplazar el carácter se debe mantener el ord
 Necesitamos una función que nos diga si podemos reconfigurar una máquina para que de un regalo pueda pasar a fabricar otro según las reglas mencionadas. Lo mejor es que veamos un ejemplo:
 
 const from = 'BAL'
+
 const to   = 'LIB'
+
 const canReconfigure(from, to)  true
+
 /* la transformación sería así:
 B -> L
 A -> I
@@ -742,8 +832,11 @@ L -> B
 */
 
 const from = 'CON'
+
 const to   = 'JUU'
+
 const canReconfigure(from, to)  false
+
 /* no se puede hacer la transformación:
 C -> J
 O -> U
@@ -751,30 +844,39 @@ N -> FALLO
 */
 
 const from = 'XBOX'
+
 const to   = 'XXBO'
+
 const canReconfigure(from, to)  false
-/* no se puede hacer la transformación:
+
+no se puede hacer la transformación:
 X -> X
 B -> X (FALLO, no mantiene el orden de transformación y la B no puede asignarse a la X que ya se asignó a otra) 
 O -> B
 X -> O (FALLO, la X no puede asignarse a la O que ya se asignó a la X)
-*/
+
 
 const from = 'XBOX'
+
 const to   = 'XOBX'
+
 const canReconfigure(from, to) true
 
 const from = 'MMM'
+
 const to   = 'MID'
+
 cons canReconfigure(from, to) false
-/* no se puede hacer la transformación:
+no se puede hacer la transformación:
 M -> M (BIEN, asigna el mismo carácter a si mismo)
 M -> I (FALLO, asigna el mismo carácter a dos letras distintas)
 M -> D (FALLO, asigna el mismo carácter a dos letras distintas)
-*/
+
 
 const from = 'AA'
+
 const to   = 'MID'
+
 cons canReconfigure(from, to)
 
 # Reto 24:
@@ -800,7 +902,9 @@ const tree2 = {
 }
 
 checkIsSameTree(tree, tree2) false
+
 checkIsSameTree(tree2, tree2) true
+
 El cuñado 🦹‍♂️, que se las sabe todas, me ha dicho que tenga cuidado porque el truco del JSON.stringify puede no funcionar... ya que los árboles pueden ser el mismo pero el orden de representación de las ramas izquierda y derecha puede ser inversa...
 
 
@@ -827,8 +931,11 @@ const room = [
 ]
 
 canMouseEat('up',    room)   false
+
 canMouseEat('down',  room)   true
+
 canMouseEat('right', room)   false
+
 canMouseEat('left',  room)   false
 
 const room2 = [
@@ -839,8 +946,12 @@ const room2 = [
 ]
 
 canMouseEat('up',    room2)   false
+
 canMouseEat('down',  room2)   false
+
 canMouseEat('right', room2)   true
+
 canMouseEat('left',  room2)   false
+
 ¡Ten en cuenta que el ratón quiere buscar comida en diferentes habitaciones y que cada una puede tener dimensiones diferentes!
 
