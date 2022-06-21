@@ -22,6 +22,8 @@ console.log(ovejasFiltradas)
 
 [{ name: 'Navidad', color: 'rojo' },
 { name: 'Ki Na Ma', color: 'rojo' }]
+
+
 Recuerda. Debe contener las dos letras 'a' y 'n' en el nombre. No cuentes ovejas que sólo tenga una de las letras, debe tener ambas.
 
 
