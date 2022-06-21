@@ -39,14 +39,15 @@ Al ejecutar el método debería devolver lo siguiente:
 const regalos = listGifts(carta)
 
 console.log(regalos)
-/*
+
 {
   bici: 2,
   coche: 2,
   balón: 1,
   peluche: 1
 }
-*/
+
+
 Ten en cuenta que los tests pueden ser más exhaustivos... 😝 ¡Cuidado con contar espacios vacíos!
 
 
@@ -361,11 +362,11 @@ getMinJump(obstacles)  -> 4
 
 S es salto, X es obstáculo
 
-/* Así quedaría la representación:
+Así quedaría la representación:
 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 .  .  .  X  .  X  X  X  .  X  . 
 S-----------S-----------S-------
-*/
+
 
 
 const obstacles = [2, 4, 6, 8, 10]
@@ -373,7 +374,7 @@ const obstacles = [2, 4, 6, 8, 10]
 getMinJump(obstacles) -> 7
 
 
-/* Así quedaría la representación:
+Así quedaría la representación:
 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 .  .  X  .  X  .  X  .  X  .  X 
 S--------------------S---------
@@ -395,7 +396,7 @@ getMinJump([3, 7, 5])  -> 2
 
 getMinJump([9, 5, 1])  -> 2
 
-*/
+
 La dificultad del reto está en pensar que sólo podemos configurar el salto del trineo una vez y que buscamos el salto mínimo que nos serviría para sortear todos los obstaculos.
 
 # Reto 13:
@@ -737,7 +738,7 @@ Necesitamos una función que pasándole un árbol binario nos diga el número de
 
 Lo mejor es que veamos un ejemplo:
 
- tenemos el árbol en forma de objeto
+Tenemos el árbol en forma de objeto
  
 const tree = {
   value: 1,  el nodo raíz siempre es uno, porque es la estrella ⭐
@@ -753,13 +754,13 @@ const tree = {
   }
 }
 
-/* Gráficamente sería así:
+Gráficamente sería así:
     1
   /   \
  2     3
 
 1 + 2 + 3 = 6
-*/
+
 
 countDecorations(tree)  6
 
@@ -793,7 +794,7 @@ const bigTree = {
   }
 }
 
-/*
+
         1
       /   \
      5     6
@@ -825,11 +826,11 @@ const to   = 'LIB'
 
 const canReconfigure(from, to)  true
 
-/* la transformación sería así:
+la transformación sería así:
 B -> L
 A -> I
 L -> B
-*/
+
 
 const from = 'CON'
 
@@ -837,11 +838,11 @@ const to   = 'JUU'
 
 const canReconfigure(from, to)  false
 
-/* no se puede hacer la transformación:
+no se puede hacer la transformación:
 C -> J
 O -> U
 N -> FALLO
-*/
+
 
 const from = 'XBOX'
 
